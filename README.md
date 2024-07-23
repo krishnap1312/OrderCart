@@ -15,12 +15,12 @@ This project is a restaurant ordering system designed to streamline the process 
 - **Database Storage**: All menu items are stored in a database, ensuring persistence and easy retrieval.
 
 ### End User's Interface
-- **View Menu Items**: The frontend fetches menu items from the database and displays them for the end user.
+- **View Menu Items**: The front end fetches menu items from the database and displays them for the end user.
 - **Add Items to Cart**: Users can add items to their cart from the menu.
-- **Modify Cart**: Users can increment or decrement the quantity of items in their cart or remove items entirely.
+- **Modify Cart**: Users can increment or decrease the quantity of items in their cart or remove items entirely.
 - **Dynamic Total Price**: The total price of items in the cart is dynamically updated based on the number of items and their quantities.
 - **QR Code Payment**: Users can view a QR code to make payments using any UPI ID. 
-- **Confirm Payment**: After making the payment, users must click on the "Confirm Payment" button. Note that the payment gateway is a dummy, so actual payment processing is not implemented.
+- **Confirm Payment**: After making the payment, users must click on the "Confirm Payment" button. Note that the payment gateway is a dummy, but if you scan a QR Code using any UPI app it will show the receiver's name and even you can transfer the amount too. The actual payment processing is not implemented means if payment is done then this restaurant won't automatically redirect you to the Home Page you have to click on the *Confirm Payment* button.
 - **Empty Cart**: Once payment is confirmed, the cart is emptied, and the ordered products are stored in the database.
 
 ## Installation and Setup
