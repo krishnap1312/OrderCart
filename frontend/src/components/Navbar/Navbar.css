@@ -1,0 +1,31 @@
+
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #444;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.4vw;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+  }
+  
+  nav a.active {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+  }
+  

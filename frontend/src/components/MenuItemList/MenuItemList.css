@@ -1,0 +1,162 @@
+
+.menu-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start; 
+  margin-bottom: 15px;
+  padding: 15px;
+  gap: 15px;
+  overflow: hidden; 
+}
+
+.menu-image {
+  width: 150px; 
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0; 
+}
+
+.menu-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: calc(100% - 165px); 
+}
+
+.menu-item:hover{
+  box-shadow: .5vw .1vw 1vw;
+}
+
+.menu-title {
+  font-size: 1.5rem;
+  color: #fb8500;
+  margin: 0 0 10px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal; 
+  word-wrap: break-word; 
+}
+
+.menu-description {
+  font-size: 1rem;
+  margin: 1vw 5vw 1vw 5vw; 
+  color: #555;
+  word-break: break-word; 
+  overflow-wrap: break-word; 
+}
+
+.menu-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: auto; 
+}
+
+
+.add-to-cart-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.add-to-cart-button:hover {
+  background-color: #45a049;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+.modal p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .menu-item {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+
+  .menu-image {
+    width: 100%; 
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+
+  .menu-details {
+    max-width: 100%; 
+  }
+
+  .menu-title,
+  .menu-description,
+  .menu-price {
+    font-size: 1rem; 
+    margin: 0 auto; 
+    text-align: center; 
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+  }
+
+  .menu-title {
+    white-space: normal; 
+  }
+
+  .menu-description {
+    margin: 0 10px; 
+  }
+
+  .add-to-cart-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

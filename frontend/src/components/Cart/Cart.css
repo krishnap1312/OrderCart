@@ -1,0 +1,128 @@
+.cart-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.cartImage {
+  width: 20vw;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  
+  margin: 4vw 12vw;
+}
+
+.cart-item-controls {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+li h2 {
+  font-size: 18px;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+li p {
+  margin: 5px 0;
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.EmptyMessage {
+  font-size: 3vw;
+  text-align: center;
+}
+
+.EmptyCart {
+  width: 15vw;
+  margin: 2vw auto;
+  display: block;
+}
+
+.qr-code {
+  display: block;
+  margin: 20px auto;
+}
+
+.qr-code-container p {
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255, 78, 78);
+}
+
+@media (max-width: 600px) {
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button {
+    width: auto;
+    margin: 5px 0;
+  }
+
+  .cartImage {
+    width: 40vw;
+    margin: 10vw auto;
+    display: block;
+  }
+
+  li p {
+    font-size: 4vw;
+  }
+
+  .qr-code {
+    margin: 20px auto;
+    display: block;
+  }
+}
